@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  margin-top:260px;
 }
 
 .App-logo {
@@ -35,4 +36,42 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background:#ebcde5;
+  margin:0;
+  padding:0;
+}
+
+h1 {
+  color: #333;
+  margin-bottom: 30px;
+}
+
+button {
+  background-color: purple;
+  color:white;
+  border: none;
+  padding: 12px 20px;
+  margin:10px;
+  border-radius: 9px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background: rgba(11, 145, 29, 0.8);
+  transform: scale(1.05);
+}
+
+button.error {
+  background: rgb(211, 23, 63);
+}
+
+button.error:hover {
+  background: rgba(235, 82, 12, 0.8);
 }

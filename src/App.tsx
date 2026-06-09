@@ -1,6 +1,6 @@
 import Reacy, { useEffect } from 'react';
 import { Log } from './utils/logger';
-
+import './App.css';
 
 function App() {
   useEffect(() => {
@@ -16,10 +16,10 @@ function App() {
     Log('App', 'Error', 'Frontend', 'Something went wrong!');
   };
   return (
-    <div style={{ textAlign: 'center', marginTop: '50px'}}>
+    <div className="App">
       <h1>  Logging Middleware Demo</h1>
       <button onClick = {handleClick}> Click me!</button>
-      <button onClick = {handleError} style={{marginLeft: '10px'}}>Trigger Error</button>
+      <button onClick = {handleError} className="error">Trigger Error</button>
     </div>
   );
 }
